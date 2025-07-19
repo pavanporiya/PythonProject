@@ -1,0 +1,52 @@
+def create_login_frame(self):
+        # Load the second image for the login frame
+        self.login_frame_image = Image.open(r"C:\xampp\htdocs\PythonProject\DeskTopAi\login.png")
+        self.login_frame_image = self.login_frame_image.resize((400, 500), Image.LANCZOS)
+        self.login_frame_photo = ImageTk.PhotoImage(self.login_frame_image)
+
+    # Create a Label to hold the second image inside the login frame
+        self.login_frame_image_label = tk.Label(self.login_frame, image=self.login_frame_photo)
+        self.login_frame_image_label.place(x=0, y=0, relwidth=1, relheight=1)
+        tk.Label(self.login_frame, text="Username", bg="#f2f2f2", fg="#555").grid(row=1, column=0, padx=10, pady=5)
+        tk.Label(self.login_frame, text="Password", bg="#f2f2f2", fg="#555").grid(row=2, column=0, padx=10, pady=5)
+
+        self.username_entry_login = tk.Entry(self.login_frame)
+        self.password_entry_login = tk.Entry(self.login_frame, show="*")
+
+        self.username_entry_login.grid(row=1, column=1, padx=10, pady=5)
+        self.password_entry_login.grid(row=2, column=1, padx=10, pady=5)
+
+        tk.Button(self.login_frame, text="Login", command=self.login, bg="#4CAF50", fg="white", width=10).grid(row=3, column=1, pady=10)
+    
+    # Add the signup button here
+        tk.Button(self.login_frame, text="Signup", command=self.show_signup_frame, bg="#4CAF50", fg="white", width=10).grid(row=4, column=1, pady=10)
+
+        tk.Button(self.signup_frame, text="Back to Login", command=self.show_login_frame, bg="#4CAF50", fg="white", width=10).grid(row=5, column=1)        
+    def create_signup_frame(self):
+        # Load the second image for the login frame
+        self.login_frame_image = Image.open(r"C:\xampp\htdocs\PythonProject\DeskTopAi\login.png")
+        self.login_frame_image = self.login_frame_image.resize((400, 500), Image.LANCZOS)
+        self.login_frame_photo = ImageTk.PhotoImage(self.login_frame_image)
+
+    # Create a Label to hold the second image inside the login frame
+        self.login_frame_image_label = tk.Label(self.login_frame, image=self.login_frame_photo)
+        self.login_frame_image_label.place(x=0, y=0, relwidth=1, relheight=1)
+        
+        tk.Label(self.login_frame, text="Username", bg="#f2f2f2", fg="#555").grid(row=1, column=0, padx=10, pady=5)
+        tk.Label(self.login_frame, text="Password", bg="#f2f2f2", fg="#555").grid(row=2, column=0, padx=10, pady=5)
+        tk.Label(self.signup_frame, text="Signup", font=("Arial", 16, "bold"), bg="#f2f2f2", fg="#333").grid(row=0, column=1, pady=10)
+        tk.Label(self.signup_frame, text="Username", bg="#f2f2f2", fg="#555").grid(row=1, column=0, padx=10, pady=5)
+        tk.Label(self.signup_frame, text="Email", bg="#f2f2f2", fg="#555").grid(row=2, column=0, padx=10, pady=5)
+        tk.Label(self.signup_frame, text="Password", bg="#f2f2f2", fg="#555").grid(row=3, column=0, padx=10, pady=5)
+
+        self.username_entry_signup = tk.Entry(self.signup_frame)
+        self.email_entry_signup = tk.Entry(self.signup_frame)
+        self.password_entry_signup = tk.Entry(self.signup_frame, show="*")
+
+        self.username_entry_signup.grid(row=1, column=1, padx=10, pady=5)
+        self.email_entry_signup.grid(row=2, column=1, padx=10, pady=5)
+        self.password_entry_signup.grid(row=3, column=1, padx=10, pady=5)
+
+        tk.Button(self.signup_frame, text="Submit", command=self.signup, bg="#4CAF50", fg="white", width=10).grid(row=4, column=1, pady=10)
+        tk.Button(self.signup_frame, text="Back to Login", command=self.show_login_frame, bg="#000000", fg="white", width=10).grid(row=5, column=1)
+    
