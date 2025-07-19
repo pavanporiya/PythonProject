@@ -1,0 +1,103 @@
+Wake Up
+Description: Activates the assistant, allowing it to listen for further commands.
+
+Rest
+Description: Deactivates the assistant
+
+Sleep
+Description: Deactivates the assistant, putting it in a sleep mode until "Wake Up" is spoken again. 
+
+Change Password
+Description: Prompts the user to enter a new password and saves it to a file.
+
+Screenshot
+Description: Takes a screenshot of the current screen and saves it as "screenshot.png".
+
+Click My Photo
+Description: Opens the camera application and takes a photo after a brief delay.
+
+Internet Speed
+Description: Checks and announces the current upload and download speeds of the internet connection.
+
+IPL Score
+Description: Fetches and announces the current scores of ongoing IPL matches.
+
+Focus Mode
+Description: Prompts the user to confirm entering focus mode, which opens a specific focus mode script.
+
+Translate
+Description: Translates a given phrase into another language using a translation module.
+
+Show My Focus
+Description: Displays the user's focus graph using a specific graphing module.
+
+Hello
+Description: Responds with a greeting and asks how the user is doing.
+
+I Am Fine
+Description: Acknowledges the user's response and offers assistance.
+
+How Are You
+Description: Responds to the user's inquiry about the assistant's well-being.
+
+Thank You
+Description: Acknowledges the user's gratitude.
+
+Where Are You
+Description: Informs the user that the assistant is a virtual entity within their system.
+
+Play a Game
+Description: Initiates a game module for the user to play.
+
+Open
+Description: Opens a specified application or website based on the user's command.
+
+Close
+Description: Closes a specified application or website based on the user's command.
+
+Google
+Description: Searches for a query on Google and reads out the results. OR Directly speak your query Include(Google) at the end
+
+
+YouTube
+Description: Searches for a query on YouTube and plays the video. OR Directly speak your query Include(You tube) at the end
+
+Pause
+Description: Pauses the currently playing video.
+
+Play
+Description: Plays the currently paused video.
+
+Mute
+Description: Mutes the currently playing video.
+
+Volume Up
+Description: Increases the volume of the system.
+
+Volume Down
+Description: Decreases the volume of the system.
+
+Remember That
+Description: Saves a specified message for the assistant to remember.
+
+What Do You Remember
+Description: Reads out the message that the assistant has remembered.
+
+Wikipedia
+Description: Searches for a query on Wikipedia and reads out the summary.OR Directly speak your query Include(Wikipedia) at the end
+
+
+News
+Description: Fetches and reads the latest news.
+
+Calculate
+Description: Performs a calculation based on the user's query.
+
+Temperature
+Description: Fetches and announces the current temperature for a specified location.
+
+Set an Alarm
+Description: Prompts the user to set an alarm for a specified time.
+
+WhatsApp
+Description: Sends a message via WhatsApp based on the user's command.
